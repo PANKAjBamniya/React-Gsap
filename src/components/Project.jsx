@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "./Card";
-import CartTwo from "./CartTwo";
+// import CartTwo from "./CartTwo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,11 +38,7 @@ const Project = () => {
   return (
     <section className="scroll-section-outer">
       <div ref={triggerRef} className="bg-black">
-      <CartTwo/>
-     
-        <div ref={sectionRef} className="scroll-section-inner bg-zinc-800">
-        <Card/>
-        </div>
+      <Card/>
       </div>
     </section>
   );
